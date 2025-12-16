@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  min-height: 100vh;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Animated background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(78, 205, 196, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Floating particles effect */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.2), transparent),
+    radial-gradient(1px 1px at 160px 120px, rgba(255, 255, 255, 0.3), transparent);
+  background-size: 200px 200px;
+  animation: float 20s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(102, 126, 234, 0.5);
+  color: #fff;
+}
+
+/* Focus styling */
+:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}

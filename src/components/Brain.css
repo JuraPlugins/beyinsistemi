@@ -35,7 +35,7 @@
 
 .brain-wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;

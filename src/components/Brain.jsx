@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { brainRegions } from '../data/brainRegions';
 import DetailModal from './DetailModal';
+import DevelopmentSlider from './DevelopmentSlider';
 import brainImage from '../assets/brain.png';
 import './Brain.css';
 
@@ -92,6 +93,9 @@ export default function Brain() {
                         </div>
                     ))}
                 </div>
+
+                {/* Development Slider */}
+                <DevelopmentSlider />
             </div>
 
             {selectedRegion && (

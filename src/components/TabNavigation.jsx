@@ -6,6 +6,7 @@ const tabs = [
     { id: 'quiz', label: 'Quiz Modu', icon: '📝' },
     { id: 'comparison', label: 'Karşılaştırma', icon: '⚖️' },
     { id: 'timeline', label: 'Timeline', icon: '📊' },
+    { id: 'identity', label: 'Kimlik ve Benzersizlik', icon: '🌟' },
 ];
 
 export default function TabNavigation({ activeTab, onTabChange }) {

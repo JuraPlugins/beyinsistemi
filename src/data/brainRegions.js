@@ -13,6 +13,23 @@ export const brainRegions = [
       'Gelecekteki hedeflerinizi hayal etmek ve kim olmak istediğinizi düşünmek',
       'Sosyal ortamlarda davranışlarınızı kontrol etmek'
     ],
+    damageEffects: {
+      title: 'Prefrontal Korteks Hasarı',
+      symptoms: [
+        'Kişilik değişiklikleri ve dürtü kontrolü kaybı',
+        'Planlama ve karar verme güçlüğü',
+        'Sosyal davranışlarda uygunsuzluk',
+        'Duygusal düzensizlik ve irritabilite',
+        'Motivasyon eksikliği (apati)'
+      ],
+      famousCases: [
+        {
+          name: 'Phineas Gage (1848)',
+          description: 'Demiryolu işçisi Phineas Gage\'in kafasından demir çubuk geçti ve prefrontal korteksini hasar aldı. Kazadan önce sakin ve güvenilir olan Gage, sonrasında sabırsız, kaba ve dürtüsel biri haline geldi. Bu vaka, prefrontal korteksin kişilik üzerindeki etkisini ortaya koyan ilk önemli bulguydu.',
+          year: 1848
+        }
+      ]
+    },
     icon: '🧠'
   },
   {
@@ -29,6 +46,23 @@ export const brainRegions = [
       'Sosyal ortamlarda reddedilme korkusu yaşamak',
       'Kötü bir anıyı hatırladığınızda hâlâ üzüntü hissetmek'
     ],
+    damageEffects: {
+      title: 'Amigdala Hasarı',
+      symptoms: [
+        'Korku tepkisinin kaybı veya azalması',
+        'Tehlikeli durumları tanıyamama',
+        'Yüz ifadelerinden duygu okumada zorluk',
+        'Sosyal yargılamada bozukluk',
+        'Duygusal anıların oluşturulmasında güçlük'
+      ],
+      famousCases: [
+        {
+          name: 'S.M. Vakası (Ürbach-Wiethe Hastalığı)',
+          description: 'Nadir görülen Ürbach-Wiethe hastalığı nedeniyle her iki amigdalası hasar gören S.M., korku hissedemez hale geldi. Yılanlar, örümcekler veya korku filmleri onu etkilemiyordu. Tehlikeli durumlara karşı tamamen kayıtsız kaldı. Bu vaka korkunun amigdaladaki kökenini kanıtladı.',
+          year: 1994
+        }
+      ]
+    },
     icon: '💓'
   },
   {
@@ -45,6 +79,28 @@ export const brainRegions = [
       'Ailenizle geçirdiğiniz özel anları anımsamak',
       'Geçmiş başarı ve başarısızlıklarınızdan ders çıkarmak'
     ],
+    damageEffects: {
+      title: 'Hipokampüs Hasarı',
+      symptoms: [
+        'Yeni anılar oluşturamama (anterograd amnezi)',
+        'Geçmiş anıları hatırlamada zorluk (retrograd amnezi)',
+        'Mekansal oryantasyon bozukluğu (kaybolma)',
+        'Öğrenme güçlüğü',
+        'Zaman algısında bozukluk'
+      ],
+      famousCases: [
+        {
+          name: 'Henry Molaison (H.M.) (1953)',
+          description: 'Epilepsi tedavisi için hipokampüsü cerrahi olarak alınan Henry Molaison, operasyondan sonra yeni anı oluşturamaz hale geldi. Her gün tanıştığı insanları bir sonraki gün tanıyamıyordu. 55 yıl boyunca sürekli "şimdi"de yaşadı. Bu vaka hipokampüsün bellek oluşumundaki kritik rolünü ortaya koydu.',
+          year: 1953
+        },
+        {
+          name: 'Clive Wearing (1985)',
+          description: 'Viral ensefalit sonucu hipokampüsü hasar gören İngiliz müzisyen, sadece 7-30 saniyelik belleğe sahip oldu. Her an "uyandığını" düşünüyor ve günlüğüne sürekli aynı cümleleri yazıyor. Eşini her gördüğünde onu ilk kez görüyormuş gibi seviniyordu.',
+          year: 1985
+        }
+      ]
+    },
     icon: '📚'
   },
   {
@@ -61,6 +117,23 @@ export const brainRegions = [
       'Bir arkadaşınızın yüz ifadesinden mutsuz olduğunu fark etmek',
       'Sosyal ortamlarda "hava"yı okumak'
     ],
+    damageEffects: {
+      title: 'Temporal Lob Hasarı',
+      symptoms: [
+        'Dil anlama güçlüğü (Wernicke afazisi)',
+        'Yüz tanıma bozukluğu (prosopagnozi)',
+        'İşitsel algı problemleri',
+        'Görsel nesne tanımada zorluk',
+        'Müzik algısında bozukluk (amuzi)'
+      ],
+      famousCases: [
+        {
+          name: 'Dr. P (Karısını Şapka Sanan Adam)',
+          description: 'Nörolog Oliver Sacks\'ın ünlü vakası Dr. P, temporal lob hasarı nedeniyle nesneleri ve yüzleri tanıyamıyordu. Karısının başını bir şapka zannedip kaldırmaya çalıştı. Müziği mükemmel anlıyor ama görsel dünyayı yorumlayamıyordu.',
+          year: 1985
+        }
+      ]
+    },
     icon: '👂'
   },
   {
@@ -77,6 +150,23 @@ export const brainRegions = [
       'Kilo aldığınızda veya verdiğinizde beden imajınızın değişmesi',
       'Sports yaparken vücudunuzun koordinasyonunu sağlamak'
     ],
+    damageEffects: {
+      title: 'Parietal Lob Hasarı',
+      symptoms: [
+        'Hemineglekt (vücudun/uzayın yarısını görmezden gelme)',
+        'Beden algısında bozukluk',
+        'Matematik ve hesaplama güçlüğü',
+        'Yazma güçlüğü (agrafi)',
+        'Sağ-sol karıştırma'
+      ],
+      famousCases: [
+        {
+          name: 'Hemineglekt Vakaları',
+          description: 'Sağ parietal lob hasarı olan hastalar, sol taraflarını tamamen görmezden gelebilir. Tabağın sadece sağ yarısındaki yemeği yer, yüzün sadece sağ yarısını tıraş eder, saatin sadece sağ yarısındaki rakamları çizerler. Görme yeteneği sağlam olsa da beyin sol tarafı "görmez".',
+          year: null
+        }
+      ]
+    },
     icon: '🤸'
   },
   {
@@ -93,6 +183,23 @@ export const brainRegions = [
       'Birinin acısını gördüğünüzde empati duymak',
       '"Bir şeyler yanlış" diye sezgisel bir his almak'
     ],
+    damageEffects: {
+      title: 'İnsula Hasarı',
+      symptoms: [
+        'İç beden farkındalığının kaybı (interoception)',
+        'Empati ve duygusal anlayış eksikliği',
+        'Tat algısında bozukluk',
+        'Bağımlılık döngülerinde bozulma',
+        'Ağrı algısında değişiklik'
+      ],
+      famousCases: [
+        {
+          name: 'Bağımlılık ve İnsula Araştırmaları',
+          description: 'İnsula hasarı olan sigara bağımlılarının, hiçbir çaba göstermeden aniden sigarayı bıraktığı keşfedildi. İnsula, bağımlılık hissini ve "istek" duygusunu işlediği için hasarı bu güçlü dürtüyü ortadan kaldırdı. Bu bulgu bağımlılık tedavisinde yeni kapılar açtı.',
+          year: 2007
+        }
+      ]
+    },
     icon: '💫'
   }
 ];

@@ -5,6 +5,7 @@ import BrainAgeConnection from './components/BrainAgeConnection'
 import QuizMode from './components/QuizMode'
 import AgeComparison from './components/AgeComparison'
 import DevelopmentTimeline from './components/DevelopmentTimeline'
+import IdentityUniqueness from './components/IdentityUniqueness'
 import './App.css'
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         return <AgeComparison />
       case 'timeline':
         return <DevelopmentTimeline />
+      case 'identity':
+        return <IdentityUniqueness />
       default:
         return <Brain />
     }

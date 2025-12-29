@@ -52,6 +52,42 @@ export default function DetailModal({ region, onClose }) {
                         ))}
                     </ul>
                 </div>
+
+                {/* Hasar Alırsa Bölümü */}
+                {region.damageEffects && (
+                    <div className="modal-section damage-section">
+                        <h3>
+                            <span className="section-icon">⚠️</span>
+                            Hasar Alırsa?
+                        </h3>
+                        <ul className="damage-symptoms">
+                            {region.damageEffects.symptoms.map((symptom, index) => (
+                                <li key={index}>
+                                    <span className="symptom-bullet">•</span>
+                                    {symptom}
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* Ünlü Vaka Çalışmaları */}
+                        {region.damageEffects.famousCases && region.damageEffects.famousCases.length > 0 && (
+                            <div className="case-studies">
+                                <h4>
+                                    <span className="case-icon">📖</span>
+                                    Tarihi Vaka Çalışmaları
+                                </h4>
+                                {region.damageEffects.famousCases.map((caseStudy, index) => (
+                                    <div key={index} className="case-card">
+                                        <div className="case-header">
+                                            <span className="case-name">{caseStudy.name}</span>
+                                        </div>
+                                        <p className="case-description">{caseStudy.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );
